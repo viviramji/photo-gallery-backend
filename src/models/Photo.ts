@@ -4,9 +4,9 @@ const schema = new Schema({
   title: String,
   description: String,
   img: String,
-  size: number,
+  size: Number,
   createdDate: Date,
-  lastModified: Date,
+  lastModified: Date
 });
 
 interface IPhoto extends Document {
@@ -15,7 +15,7 @@ interface IPhoto extends Document {
   img: string;
   size: number;
   createdDate: Date;
-  lastModified: Date;
+  lastModified: Date
 }
 
 export default model<IPhoto>("Photo", schema);
